@@ -23,4 +23,4 @@ RUN composer install --no-dev --optimize-autoloader
 EXPOSE 10000
 
 # Comando para iniciar servidor
-CMD ["php", "-S", "0.0.0.0:10000", "-t", "public"]
+CMD php -S 0.0.0.0:$PORT -t public
