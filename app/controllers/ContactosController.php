@@ -1,8 +1,11 @@
 <?php
 
-    public function index()
+class ContactosController
 {
-    return response()->json([
-        "mensaje" => "El controlador funciona correctamente"
-    ]);
+    public function index()
+    {
+        return response()->json([
+            "mensaje" => "El controlador funciona correctamente"
+        ]);
+    }
 }
