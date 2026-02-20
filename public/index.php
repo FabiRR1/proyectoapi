@@ -32,10 +32,8 @@ require dirname(__DIR__) . '/vendor/autoload.php';
 | Quickly use our environment variables
 |
 */
-try {
+if (file_exists(dirname(__DIR__) . '/.env')) {
     \Dotenv\Dotenv::createUnsafeImmutable(dirname(__DIR__))->load();
-} catch (\Throwable $th) {
-    trigger_error($th);
 }
 
 /*
